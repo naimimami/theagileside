@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# Docker & MariaDB (This is working)
+```bash
+docker ps -a
+docker pull mariadb/server:10.4
+docker run -p 3306:3306 -d --name mariadb-server -e "MARIADB_ROOT_PASSWORD=root" mariadb/server:10.4
+docker ps
+docker exec -it mariadb-server bash
+mariadb --host 127.0.0.1 -P 3306 --user root -proot
 
-You can use the [editor on GitHub](https://github.com/naimimami/theagileside/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+CREATE DATABASE todo;
+use todo;
+CREATE TABLE tasks (
+  id varchar(80) NOT NULL,
+  description VARCHAR(500) NOT NULL,
+  completed BOOLEAN NOT NULL DEFAULT 0,
+  PRIMARY KEY (id)
+);
 ```
+# Docker & Cassandra Steps (This is working)
+```bash
+docker ps -a
+docker stop cassandra-theagileside
+docker rm cassandra-theagileside
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+docker pull cassandra:latest
 
-### Jekyll Themes
+docker run --name cassandra-theagileside -d \
+    -e CASSANDRA_BROADCAST_ADDRESS=127.0.0.1 \
+    -p 7000:7000 \
+    -p 9042:9042 \
+    --restart always\
+    cassandra:latest
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/naimimami/theagileside/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+docker exec -it cassandra-theagileside bash
 
-### Support or Contact
+cqlsh
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+use my_keyspace;
+select * from video;
+select * from book;
+select * from party;
+```
