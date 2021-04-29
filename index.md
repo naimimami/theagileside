@@ -39,7 +39,10 @@ public enum FiniteStateMachine {
 # Decomposition Strategies
 ### Decompose by business capability pattern
 One strategy for creating a microservice architecture is to decompose by business capability. A concept from business architecture modeling, a business capability is something that a business does in order to generate value. The set of capabilities for a given business depends on the kind of business. For example, the capabilities of an insurance company typically include Underwriting, Claims management, Billing, Compliance, and so on. The capabilities of an online store include Order management, Inventory management, Shipping, and so on.
-# Inter-process communication in a microservice architecture![image](https://user-images.githubusercontent.com/1190852/116628048-55e23a80-a91c-11eb-82a4-af1f3d12b2e3.png)
+# Inter-process communication in a microservice architecture
+One strategy
+# Managing transactions with sagas
+One strategy
 
 
  
