@@ -1,3 +1,53 @@
+
+
+# Finite State Machine
+```java
+public enum FiniteStateMachine {
+  Locked {
+        @Override
+        public void performActivity() {
+            // TODO - Implement Activity
+            System.out.println("\t ... working ... ");
+        }
+
+        @Override
+        public Map<String, DoorFSM> getMap() {
+            return new HashMap<>() {{
+                put("Unlock", FiniteStateMachine.Unlocked);
+            }};
+        }
+    },
+    Unlocked {
+        @Override
+        public void performActivity() {
+            // TODO - Implement Activity
+            System.out.println("\t ... working ... ");
+        }
+
+        @Override
+        public Map<String, DoorFSM> getMap() {
+            return new HashMap<>() {{
+                put("Open", FiniteStateMachine.Opened);
+                put("Lock", FiniteStateMachine.Locked);
+
+            }};
+        }
+    }
+    protected abstract void performActivity();
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
 # Docker & MariaDB (This is working)
 ```bash
 docker ps -a
