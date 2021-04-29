@@ -21,6 +21,22 @@ Define services corresponding to Domain-Driven Design (DDD) subdomains. DDD refe
 
 
 
+
+## Observability Patterns
+> Observability patterns enable a monitoring system to track and visualize the state of a service and inform on the service’s health by generating timely alerts. 
+> The following patterns may be used to ensure that the services are observable and expose the necessary metrics:
+> - [x] Health check API - Expose an endpoint that returns the health of the service
+> - [x] Log aggregation - Log service activity and write logs into a centralized logging server, which provides alerts and the ability to search.
+> - [x] Distributed tracing - Assign each external request a unique ID and trace requests as they flow between services.
+> - [x] Exception tracking - Report exceptions to an exception tracking service, which removes exception duplicates, alerts developers, and tracks the resolution of each exception.
+> - [x] Application metrics - Services maintain metrics, such as counters and gauges, and expose them to a metrics server.
+> - [x] Audit log - Log user actions
+>
+>  *Everything* is going according to **plan**.
+
+
+
+
 **GetGoal**
 
 
