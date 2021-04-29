@@ -2,7 +2,16 @@
 
 
 # Decomposition Strategies
-Decompose by business capability
+- [x] Decomposition by business capability, sub-capability pattern
+Define services corresponding to Domain-Driven Design (DDD) subdomains. DDD refers to the application’s problem space - the business - as the domain. A domain is consists of multiple subdomains. Each subdomain corresponds to a different part of the business.
+- [x] Decomposition by subdomain pattern / bounded context pattern
+- [x] Decomposition by use case pattern
+- [x] Decomposition by resources pattern
+- [x] Decomposition by volatility
+
+
+
+
 
 **GetGoal**
 
