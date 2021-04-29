@@ -10,6 +10,14 @@ Define services corresponding to Domain-Driven Design (DDD) subdomains. DDD refe
 - [x] Decomposition by volatility
 
 
+## Decomposition by business capability, sub-capability pattern
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
 
 
 
