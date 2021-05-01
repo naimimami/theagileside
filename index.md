@@ -103,6 +103,12 @@ select * from party;
 
 
 # Catalog of patterns
+## Decomposition patterns
+> Decomposition by use case pattern
+> Decomposition by resources pattern
+> Decomposition by business capability pattern
+> Decomposition by subdomain pattern
+## Decomposition patterns
 > Dorothy followed her through many of the beautiful rooms in her castle.
 > Dorothy followed her through many of the beautiful rooms in her castle.
 >
