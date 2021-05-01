@@ -102,7 +102,13 @@ select * from party;
 
 
 
-
+# Catalog of patterns
+| Pattern     | Summary     | Category    |
+| ----------- | ----------- | ----------- |
+| Header      | Title       |             |
+| Paragraph   | Text        |             |
+| Ambassador | Create helper services that send network requests on behalf of a consumer service or application. | Design and Implementation, Operational Excellence |
+| Anti-Corruption Layer	| Implement a façade or adapter layer between a modern application and a legacy system. | Design and Implementation, Operational Excellence |
 
 
 
