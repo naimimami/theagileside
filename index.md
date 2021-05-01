@@ -103,29 +103,18 @@ select * from party;
 
 
 # Catalog of patterns
-| Pattern     | Summary     | Category    |
-| ----------- | ----------- | ----------- |
-| Header      | Title       |             |
-| Paragraph   | Text        |             |
-| Ambassador | Create helper services that send network requests on behalf of a consumer service or application. | Design and Implementation, Operational Excellence |
-| Anti-Corruption Layer	| Implement a façade or adapter layer between a modern application and a legacy system. | Design and Implementation, Operational Excellence |
-
-
-
-This is a regular paragraph.
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-This is another regular paragraph.
-
-
-
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+> Dorothy followed her through many of the beautiful rooms in her castle.
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
 
 
