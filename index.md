@@ -99,3 +99,27 @@ select * from video;
 select * from book;
 select * from party;
 ```
+
+
+
+
+
+
+
+This is a regular paragraph.
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+This is another regular paragraph.
+
+
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
+
